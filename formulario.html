@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"> <img src="img/logo.png" alt="logo"> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" class="posicion">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="biografia.html">Biografia</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="discografia.html">Discografia</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="shows.html">Shows</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="ventas.html">Ventas</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <article>
+        <h2>Formulario de venta</h2>
+
+        <div class="centrar">
+            <form>
+                <div class="Formulario">
+
+                    <div class="itemFormulario">
+                        <p> Seleccione un producto</p>
+                        <div class="centrar">
+                            <select>
+                                <option value="RemeraDamaAzul"> Remera dama Azul</option>
+                                <option value="RemeraDamaGris"> Remera dama Gris</option>
+                                <option value="RemeraDamaBordo"> Remera dama Bordo</option>
+                                <option value="RemeraHombreAzul"> Remera hombre azul</option>
+                                <option value="RemeraHombreVerde"> Remera hombre verde</option>
+                                <option value="RemeraHombreRojo"> Remera hombre rojo</option>
+                                <option value="CamperaGris"> Camprea Gris</option>
+                                <option value="CamperaBordo"> Camprea Bordo</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="itemFormulario">
+                        <p>Seleccione una talla</p>
+                        <div class="centrar">
+                            <select>
+                                <option value="xs">XS</option>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                                <option value="xxl">XXL</option>
+                                <option value="xxxl">XXXL</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="itemFormulario">
+                        <label for="">Nombre y apellido:</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </div>
+
+                    <div class="itemFormulario">
+                        <label for="">Correo electronico:</label>
+                        <input type="text" name="correo" id="correo">
+                    </div>
+
+                    <div class="itemFormulario">
+                        <p> Seleccione una tarjeta</p>
+                        <div class="centrar">
+                            <select>
+                                <option value="visa"> Visa</option>
+                                <option value="Maestro"> Maestro</option>
+                                <option value="master card"> Master card</option>
+                                <option value="favacard"> Favacard</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="itemFormulario">
+                        <label for="">Numero de tarjeta:</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </div>
+
+                    <div class="itemFormulario">
+                        <label for="expiracion">Fecha de expiracion:</label>
+                        <input type="date" name="expiracion" id="expiracion">
+                    </div>
+
+                    <div class="itemFormulario">
+                        <p>Seleccione numero de cuotas</p>
+                        <div class="centrar">
+                            <input type="radio" name="cuota" value="1cuota"> 1cuota
+                            <input type="radio" name="cuota" value="3cuotas"> 3cuotas
+                            <input type="radio" name="cuota" value="6cuotas"> 6cuotas
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <label for="numero" id="numeroAleatorio">  </label>
+                <input type="text" id="captchainput" required>
+                <button type="submit" id="enviar"> Enviar </button>
+
+                <p id="leer"> </p>
+
+            </form>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <h4>La Renga - 2020</h4>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="javascript/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="javascript/captcha.js"></script>
+</body>
+
+</html>

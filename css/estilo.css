@@ -1,0 +1,327 @@
+body {
+    background-image: url(../img/universo2.jpg);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin: 0;
+}
+
+.centrar {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: 25px;
+    border-bottom: 1px solid white;
+}
+
+h2 {
+    border-bottom: 1px solid white;
+    font-size: 25px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+
+/*HEADER*/
+
+header nav a img {
+    width: 150px;
+}
+
+
+/*FOOTER*/
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    text-transform: uppercase;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 15px;
+}
+
+
+/*HOME*/
+
+.centrar img,
+iframe {
+    width: 90%;
+    margin: 5%;
+}
+
+
+/*BIOGRAFIA*/
+
+.bio {
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.nombre1 {
+    grid-area: n1;
+}
+
+.nombre2 {
+    grid-area: n2;
+}
+
+.nombre3 {
+    grid-area: n3;
+}
+
+.nombre4 {
+    grid-area: n4;
+}
+
+.integrantes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". n1 n1 n1 n1 ." ". n2 n2 n2 n2 ." ". n3 n3 n3 n3 ." ". n4 n4 n4 n4 .";
+}
+
+
+/*DISCOGRAFIA*/
+
+.portada img {
+    width: 50%;
+}
+
+.contenedorDisco {
+    border: 1px solid white;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    color: #666666;
+}
+
+
+/*VENTAS*/
+
+#carouselExampleControls {
+    width: 70%;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    width: 50%;
+    margin: 10px;
+    background-color: #efeded;
+    color: black;
+    margin-left: 25%;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}
+
+.producto img {
+    width: 150px;
+}
+
+
+/*FORMULARIO*/
+
+.Formulario {
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.itemFormulario {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    /*BIOGRAFIA*/
+    .foto {
+        width: 70%;
+        height: 70%;
+    }
+    /*DISCOGRAFIA*/
+    .contenedorDisco {
+        background-color: rgba(00, 00, 00, 0.5);
+    }
+    /*SHOWS*/
+    thead {
+        display: none;
+        /*saca el head de la tabla en estilo mobile*/
+    }
+    tr td:first-child {
+        /* estilo de la fecha solo en mobile*/
+        color: black;
+        background: #f0f0f0;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+    tbody td {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    h2 {
+        font-size: 40px;
+        padding-left: 40px;
+        padding-top: 20px;
+    }
+    /*HEADER*/
+    header nav a img {
+        width: 200px;
+    }
+    /*FOOTER*/
+    h4 {
+        font-size: 40px;
+    }
+    /*HOME*/
+    h1 {
+        font-size: 50px;
+    }
+    iframe {
+        height: 560px;
+    }
+    /*BIOGRAFIA*/
+    .bio {
+        font-size: 25px;
+        margin: 50px 300px 100px 300px;
+        background: rgba(00, 00, 00, 0.5);
+        border: 1px solid white;
+        border-radius: 30px;
+        padding: 100px;
+    }
+    .integrantes {
+        display: flex;
+        justify-content: center;
+    }
+    .foto {
+        width: 250px;
+        margin: 20px 20px 0px 20px;
+    }
+    .nombre1,
+    .nombre2,
+    .nombre3,
+    .nombre4 {
+        text-align: center;
+    }
+    /*DISCOGRAFIA*/
+    .contenedorDisco {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 50px;
+        border: none;
+    }
+    .portada img {
+        height: 300px;
+        width: 300px;
+    }
+    .portada {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        text-transform: uppercase;
+        margin-right: 20px;
+    }
+    .temas {
+        padding: 15px;
+        background-color: rgba(00, 00, 00, 0.5);
+        border: 1px solid #550000;
+        border-radius: 25px;
+        height: fit-content;
+        margin-top: 35px;
+        font-size: 20px;
+    }
+    /*SHOWS*/
+    .tabla {
+        width: 60%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        background: rgba(00, 00, 00, 0.5);
+        border: 2px solid white;
+        border-radius: 25px;
+    }
+    td,
+    th {
+        border-bottom: 2px solid #550000;
+        padding: 50px 20px 50px 20px;
+    }
+    td {
+        font-size: 20px;
+    }
+    thead {
+        padding: 50px;
+        font-size: 30px;
+        color: red;
+    }
+    /*VENTAS*/
+    #carouselExampleControls {
+        width: 30%;
+    }
+    .sale {
+        background-image: url(../img/sale5.jpg);
+        width: 60%;
+    }
+    .vestimenta {
+        display: flex;
+        justify-content: center;
+    }
+    .producto {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+        margin: 30px;
+        background-color: #efeded;
+        color: black;
+        font-size: 20px;
+    }
+    .producto:hover {
+        background-color: gray;
+    }
+    .producto img {
+        width: 300px;
+    }
+    /*FORMULARIO*/
+    .Formulario {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 10px;
+    }
+    .itemFormulario {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+    }
+    .itemFormulario label,
+    .itemFormulario p {
+        padding-right: 20px;
+        font-size: 20px;
+    }
+    #numeroAleatorio {
+        margin-top: 30px;
+    }
+}

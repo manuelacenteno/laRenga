@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shows</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"> <img src="img/logo.png" alt="logo"> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" class="posicion">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="biografia.html">Biografia</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="discografia.html">Discografia</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="shows.html">Shows</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="ventas.html">Ventas</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <article>
+
+        <h2>Conciertos</h2>
+
+        <div class="centrar">
+            <div class="tabla">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Ciudad</th>
+                            <th>Estadio</th>
+                            <th>Hora</th>
+							<th>Borrar</th>
+							<th>Modificar</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tablebody">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <h2>nuevo show</h2>
+
+        <div class="centrar">
+            <form id="formulario">
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha">
+
+                <label for="ciudad"> ciudad </label>
+                <input id="ciudad" type="text" name="ciudad">
+
+                <label for="estadio">Estadio</label>
+                <input type="text" name="estadio" id="estadio">
+
+                <label for="horario">Horario</label>
+                <input type="number" id="hora">
+
+                <button id="botonAgregar" type="submit"> Agregar </button>
+                <button id="botonBorrar" type="button"> Borrar </button>
+                <button id="botonAgregarVarios" type="button"> Agregar Varios </button>
+				
+				<label for="filtro">Filtro por Ciudad</label>
+                <input type="text" id="filtro">
+				
+			 	<button id="botonFiltro">Buscar</button>
+				<button id="quitarFiltro">Borrar Filtro</button>
+            </form>
+        </div>
+
+    </article>
+
+    <footer class="footer">
+        <h4>La Renga - 2020</h4>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="javascript/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascript/tabladinamica.js"></script>
+
+</html>
